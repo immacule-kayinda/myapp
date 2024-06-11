@@ -6,8 +6,10 @@ const port = 3000;
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
+const current = ""
+
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", current);
 });
 
 app.get("/contact", (req, res) => {
